@@ -11,10 +11,11 @@ Every user-facing audit report must begin with two sections before the module-sp
 Choose exactly one status:
 
 - **READY FOR SUBMISSION** - no unresolved FATAL or MAJOR scientific/technical blocker remains in the minimum readiness domains applicable to this paper type.
-- **READY AFTER MINOR CORRECTIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
-- **NOT READY - MATERIAL REVISION REQUIRED** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission.
-- **NOT READY - REDESIGN/DEVELOPMENT REQUIRED** - the current paper requires substantial new analysis, redesign, new theory, or new data before a credible submission.
-- **READINESS INCOMPLETE** - available material or tool access is insufficient to determine readiness. State exactly what remains unverified.
+- **READY WITH MINOR REVISIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
+- **NOT READY FOR SUBMISSION** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission. Say in the decisive reason whether the repair is a bounded revision or a redesign; that distinction belongs in the reason, not in the verdict.
+- **READINESS NOT ASSESSED** - nothing blocking was established, AND the material or tool access available was insufficient to clear the paper. State exactly what remains unverified.
+
+The four are not symmetric, and that is deliberate. ONE established FATAL or MAJOR finding is sufficient for NOT READY FOR SUBMISSION however little of the paper you were asked to read: finding a blocker settles the question. Finding none is NOT sufficient to clear a paper you only partly read - that is READINESS NOT ASSESSED. Never use READINESS NOT ASSESSED to report that the audit itself was short or interrupted; it is a statement about the manuscript, and whether the audit closed is recorded separately.
 
 A READY verdict is stronger than a clean result in the selected module. Before issuing READY, perform the minimum cross-paper readiness checks appropriate to the paper type. For empirical papers this includes identification/estimand, econometric validity, inference, internal consistency, contribution/positioning, and headline presentation. For theoretical papers this includes mathematical validity, assumptions/domains, internal consistency, contribution/positioning, and headline presentation. For mixed/structural papers include both sets plus theory-to-evidence/model-to-data mapping.
 
@@ -450,6 +451,12 @@ For each proposed theoretical change identify the exact gap: false proposition; 
 5. Develop a nested alternative model to distinguish mechanisms.
 6. Major model redesign only when the central question cannot be answered otherwise.
 
+ALTERNATIVE FRAMEWORKS, ONLY WHEN THE CURRENT PRIMITIVES CANNOT DELIVER THE RESULT. Do not reach for a different apparatus because a problem exists; reach for it only when rung 5 or 6 is the honest rung, that is, when the target result cannot reasonably be obtained within the paper's current primitives. Then name the specific framework that would deliver the paper's claim (search and matching, contracting under hidden action or hidden information, information design, dynamic general equilibrium, global games, mechanism design, bounded rationality) and say which of the paper's existing primitives survive the move and which are replaced. A framework that discards the paper's question is not a proposal.
+
+WRITE THE PROPOSED CHANGE AS MATHEMATICS: the amended assumption, the restated proposition, and the comparative static or prediction it newly delivers. Use the `replacement` field of the finding. A theoretical proposal stated only in prose has not been made.
+
+INCOMPLETE FORMALISATION. A work in progress may contain no proposition yet: a setup, a mechanism and a conjecture. In that case the task is not to find a failing statement but to formulate the mathematical result these primitives could support: state the candidate proposition precisely, the assumptions it would need, and what would have to be proved. Do not penalise the absence of a theorem; supply the shape of the one the project is reaching for.
+
 ## Tests
 - Does the extension generate a new discriminating prediction?
 - Can the new parameter be disciplined by existing data/moments?
@@ -458,3 +465,11 @@ For each proposed theoretical change identify the exact gap: false proposition; 
 - Does a simpler nested model achieve the same explanatory content?
 
 Do not add theory because it is fashionable or because a referee might ask. Every extension must change a scientific decision.
+
+
+SIXTH TEST FOR ANY PROPOSED EXTENSION (only when the project intends empirical discipline or calibration): is the new object disciplined by data the paper already has, or does it require a moment the project cannot observe? If the latter, say which data source would discipline it. A purely theoretical note is not asked this question.
+
+
+OUTPUT FORMAT
+
+Each finding uses the shared finding template of the empirical development audit (object, claim, what was checked, what fails, consequence, proposed change written as mathematics, what it would newly deliver, severity, verification method). After the findings, a three-stage work program in the same shape as the empirical development audit: Stage 1 what must be proved next; Stage 2 what becomes possible once Stage 1 holds; Stage 3 useful extensions, each with diagnostic value, effort and a decision (DO NOW / DO ONLY IF EARLIER WORK FAILS / NOT RECOMMENDED).

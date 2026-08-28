@@ -14,10 +14,11 @@ Every user-facing audit report must begin with two sections before the module-sp
 Choose exactly one status:
 
 - **READY FOR SUBMISSION** - no unresolved FATAL or MAJOR scientific/technical blocker remains in the minimum readiness domains applicable to this paper type.
-- **READY AFTER MINOR CORRECTIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
-- **NOT READY - MATERIAL REVISION REQUIRED** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission.
-- **NOT READY - REDESIGN/DEVELOPMENT REQUIRED** - the current paper requires substantial new analysis, redesign, new theory, or new data before a credible submission.
-- **READINESS INCOMPLETE** - available material or tool access is insufficient to determine readiness. State exactly what remains unverified.
+- **READY WITH MINOR REVISIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
+- **NOT READY FOR SUBMISSION** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission. Say in the decisive reason whether the repair is a bounded revision or a redesign; that distinction belongs in the reason, not in the verdict.
+- **READINESS NOT ASSESSED** - nothing blocking was established, AND the material or tool access available was insufficient to clear the paper. State exactly what remains unverified.
+
+The four are not symmetric, and that is deliberate. ONE established FATAL or MAJOR finding is sufficient for NOT READY FOR SUBMISSION however little of the paper you were asked to read: finding a blocker settles the question. Finding none is NOT sufficient to clear a paper you only partly read - that is READINESS NOT ASSESSED. Never use READINESS NOT ASSESSED to report that the audit itself was short or interrupted; it is a statement about the manuscript, and whether the audit closed is recorded separately.
 
 A READY verdict is stronger than a clean result in the selected module. Before issuing READY, perform the minimum cross-paper readiness checks appropriate to the paper type. For empirical papers this includes identification/estimand, econometric validity, inference, internal consistency, contribution/positioning, and headline presentation. For theoretical papers this includes mathematical validity, assumptions/domains, internal consistency, contribution/positioning, and headline presentation. For mixed/structural papers include both sets plus theory-to-evidence/model-to-data mapping.
 
@@ -394,7 +395,7 @@ The paper is substantively frozen. Report validity/consistency problems within t
 The iterative protocol applies to **verification**, not to specification search.
 
 
-Structure edits must not change the scientific content. For OPEN projects, proposed structural changes may anticipate approved new material, but never manufacture results or contributions.
+Structure edits must not change the scientific content. For OPEN projects, proposed structural changes may anticipate approved new material, but never manufacture results or contributions. Under OPEN, also state the section order and framing the recommended positioning implies, including sections that do not yet exist and the material each would need.
 
 # DOMAIN-SPECIFIC AUDIT — PRESERVED AND INCORPORATED
 

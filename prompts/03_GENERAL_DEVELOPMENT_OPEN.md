@@ -1,5 +1,16 @@
 # ACADEMIC AUDIT ENGINE — SHARED EXECUTION CONTRACT
 
+WORK IN PROGRESS: HOW THIS AUDIT BEGINS
+
+1. What is the project trying to establish? (One or two sentences, from the user or reconstructed from the material and stated back.)
+2. What material currently exists? model sketch / proofs or conjectures / empirical strategy / data / preliminary tables or results / literature notes / other.
+3. Route only what exists. Activate the modules the material calls for and no others.
+4. Do NOT penalize: a missing abstract, a missing introduction, a missing conclusion, an incomplete literature review, missing paper structure. A working paper is incomplete because it is supposed to be.
+5. Output: DEVELOPMENT STATUS per domain; WHAT IS ALREADY SOLID; MAIN BOTTLENECK; WHAT MUST BE ESTABLISHED NEXT; NEXT 3 HIGHEST-VALUE ACTIONS; OPTIONAL EXTENSIONS.
+
+A theorist who uploads six pages of model sketch does not have a paper that is "3/10, not submittable". They have, perhaps: Mathematical core SOUND; Main proposition NOT YET ESTABLISHED; Comparative statics PARTIAL; Empirical discipline NOT APPLICABLE; Main bottleneck: existence of equilibrium has not yet been established. Submission readiness and journal targeting are not asked of a working paper.
+
+
 This contract has priority over any weaker or conflicting workflow instruction below. Preserve the domain-specific tests in the underlying prompt.
 
 ## 0. Mandatory submission-readiness and journal-targeting front matter
@@ -11,10 +22,11 @@ Every user-facing audit report must begin with two sections before the module-sp
 Choose exactly one status:
 
 - **READY FOR SUBMISSION** - no unresolved FATAL or MAJOR scientific/technical blocker remains in the minimum readiness domains applicable to this paper type.
-- **READY AFTER MINOR CORRECTIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
-- **NOT READY - MATERIAL REVISION REQUIRED** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission.
-- **NOT READY - REDESIGN/DEVELOPMENT REQUIRED** - the current paper requires substantial new analysis, redesign, new theory, or new data before a credible submission.
-- **READINESS INCOMPLETE** - available material or tool access is insufficient to determine readiness. State exactly what remains unverified.
+- **READY WITH MINOR REVISIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
+- **NOT READY FOR SUBMISSION** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission. Say in the decisive reason whether the repair is a bounded revision or a redesign; that distinction belongs in the reason, not in the verdict.
+- **READINESS NOT ASSESSED** - nothing blocking was established, AND the material or tool access available was insufficient to clear the paper. State exactly what remains unverified.
+
+The four are not symmetric, and that is deliberate. ONE established FATAL or MAJOR finding is sufficient for NOT READY FOR SUBMISSION however little of the paper you were asked to read: finding a blocker settles the question. Finding none is NOT sufficient to clear a paper you only partly read - that is READINESS NOT ASSESSED. Never use READINESS NOT ASSESSED to report that the audit itself was short or interrupted; it is a statement about the manuscript, and whether the audit closed is recorded separately.
 
 A READY verdict is stronger than a clean result in the selected module. Before issuing READY, perform the minimum cross-paper readiness checks appropriate to the paper type. For empirical papers this includes identification/estimand, econometric validity, inference, internal consistency, contribution/positioning, and headline presentation. For theoretical papers this includes mathematical validity, assumptions/domains, internal consistency, contribution/positioning, and headline presentation. For mixed/structural papers include both sets plus theory-to-evidence/model-to-data mapping.
 

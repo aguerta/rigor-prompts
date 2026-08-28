@@ -14,10 +14,11 @@ Every user-facing audit report must begin with two sections before the module-sp
 Choose exactly one status:
 
 - **READY FOR SUBMISSION** - no unresolved FATAL or MAJOR scientific/technical blocker remains in the minimum readiness domains applicable to this paper type.
-- **READY AFTER MINOR CORRECTIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
-- **NOT READY - MATERIAL REVISION REQUIRED** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission.
-- **NOT READY - REDESIGN/DEVELOPMENT REQUIRED** - the current paper requires substantial new analysis, redesign, new theory, or new data before a credible submission.
-- **READINESS INCOMPLETE** - available material or tool access is insufficient to determine readiness. State exactly what remains unverified.
+- **READY WITH MINOR REVISIONS** - no material redesign is needed, but a short bounded set of localized corrections should be completed before submission.
+- **NOT READY FOR SUBMISSION** - at least one central validity, identification, inference, mathematical, theory-evidence, consistency, contribution, or presentation problem materially threatens submission. Say in the decisive reason whether the repair is a bounded revision or a redesign; that distinction belongs in the reason, not in the verdict.
+- **READINESS NOT ASSESSED** - nothing blocking was established, AND the material or tool access available was insufficient to clear the paper. State exactly what remains unverified.
+
+The four are not symmetric, and that is deliberate. ONE established FATAL or MAJOR finding is sufficient for NOT READY FOR SUBMISSION however little of the paper you were asked to read: finding a blocker settles the question. Finding none is NOT sufficient to clear a paper you only partly read - that is READINESS NOT ASSESSED. Never use READINESS NOT ASSESSED to report that the audit itself was short or interrupted; it is a statement about the manuscript, and whether the audit closed is recorded separately.
 
 A READY verdict is stronger than a clean result in the selected module. Before issuing READY, perform the minimum cross-paper readiness checks appropriate to the paper type. For empirical papers this includes identification/estimand, econometric validity, inference, internal consistency, contribution/positioning, and headline presentation. For theoretical papers this includes mathematical validity, assumptions/domains, internal consistency, contribution/positioning, and headline presentation. For mixed/structural papers include both sets plus theory-to-evidence/model-to-data mapping.
 
@@ -561,6 +562,70 @@ Check for:
 
 Do not merely request alternative specifications. State which assumption should be varied and what the resulting comparison would diagnose.
 
+2b. BETTER ESTIMATOR FOR THE SAME ESTIMAND
+
+The following protocol is shared with the theory-and-evidence audit and applies here to the paper's OWN estimand and OWN data.
+
+Do not automatically preserve the paper's current estimator.
+
+Ask whether another empirical strategy would answer the theoretical question more directly or credibly.
+
+Possible candidates include, where substantively justified:
+
+* natural experiments;
+* instrumental variables;
+* difference-in-differences;
+* stacked DiD;
+* Callaway–Sant'Anna type estimators;
+* Sun–Abraham type estimators;
+* synthetic control;
+* synthetic DiD;
+* event studies;
+* local projections;
+* RDD;
+* regression kink;
+* bunching;
+* matching;
+* inverse probability weighting;
+* entropy balancing;
+* doubly robust estimators;
+* causal forests;
+* DML;
+* panel IV;
+* dynamic panel methods;
+* shift-share designs;
+* spatial discontinuities;
+* network exposure designs;
+* border discontinuities;
+* matched geographic designs;
+* triple differences;
+* dose-response designs;
+* hazard models;
+* duration models;
+* structural maximum likelihood;
+* GMM;
+* SMM;
+* indirect inference;
+* simulated likelihood;
+* minimum distance;
+* Bayesian structural estimation;
+* partial identification;
+* moment inequalities.
+
+Recommend an alternative only when it materially improves:
+
+* identification;
+* correspondence with the theory;
+* interpretability;
+* falsifiability;
+* efficiency;
+* credibility;
+* ability to distinguish mechanisms.
+
+Do not recommend methods merely because they are more sophisticated.
+
+The comparison is against the paper's own estimand and its own data. Name the alternative estimator, state which assumption of the current one it relaxes, what it costs in efficiency or interpretability, and what the paper would report differently. Do not propose a design the existing variation cannot support, and do not propose a new research question.
+
 3. MEASUREMENT AND DATA CONSTRUCTION
 
 Evaluate whether the variables capture the concepts assigned to them.
@@ -726,6 +791,48 @@ Additional data are necessary because the current data cannot identify, validate
 
 Do not jump to a higher level when a lower-level remedy would solve the problem convincingly.
 
+4b. IDENTIFYING VARIATION THE PROJECT HAS NOT USED
+
+Where causal identification is weak, systematically ask whether credible shocks exist.
+
+Potential variation can arise from:
+
+* policy reforms;
+* regulatory changes;
+* eligibility thresholds;
+* geographic borders;
+* staggered rollout;
+* technology arrival;
+* infrastructure expansion;
+* court decisions;
+* procurement assignments;
+* trade shocks;
+* tariff changes;
+* commodity shocks;
+* weather;
+* disasters;
+* historical exposure;
+* supply-chain shocks;
+* institutional reforms;
+* firm-specific adoption;
+* patent expirations;
+* local availability;
+* distance-based exposure.
+
+For every candidate shock distinguish:
+
+[
+\text{interesting correlation}
+]
+
+from
+
+[
+\text{credible identifying variation}.
+]
+
+Restrict candidates to variation present in, or mergeable with, the paper's existing setting. A shock the paper cannot observe is not a proposal.
+
 NEW-DATA RULE
 
 Recommend new data only when all of the following are true:
@@ -736,7 +843,7 @@ Recommend new data only when all of the following are true:
 4. The new data would produce a decision-relevant test or estimate.
 5. The expected benefit is proportionate to the collection and integration cost.
 
-State:
+State, for every source proposed, the eight fields of the shared catalogue below, and in addition:
 
 * The exact variable or source needed.
 * The unit and time coverage required.
@@ -745,6 +852,63 @@ State:
 * What conclusion would change depending on the result.
 
 Do not recommend “more data” in the abstract.
+
+SOURCE CATALOGUE (shared with the theory-and-evidence audit)
+
+You are explicitly allowed to propose new data.
+
+For every major empirical limitation ask whether it could be addressed through:
+
+* administrative records;
+* establishment data;
+* worker-level data;
+* firm-level data;
+* household surveys;
+* transaction data;
+* tax data;
+* customs data;
+* patent data;
+* vacancy/posting data;
+* occupational/task data;
+* satellite data;
+* night lights;
+* geographic information;
+* remote sensing;
+* historical archives;
+* digitized newspapers;
+* text corpora;
+* legislative records;
+* financial-market data;
+* scanner data;
+* web-scraped data;
+* platform data;
+* survey expectations;
+* experimental data;
+* cross-country datasets;
+* historical panel datasets;
+* newly constructed event datasets.
+
+For every suggested source state:
+
+1. **Variable/object obtained**
+2. **Theoretical prediction it measures**
+3. **Empirical design it enables**
+4. **What identification problem it solves**
+5. **Whether it is ESSENTIAL / HIGH VALUE / OPTIONAL**
+6. **Likely unit of observation**
+7. **Likely temporal/geographic coverage**
+8. **Whether it improves identification, mechanism testing, external validity, or measurement**
+
+Do not recommend new data without stating what scientific uncertainty it resolves.
+
+TWO CLASSES OF SOURCE, NEVER CONFUSED. Every data source you name carries one of these labels:
+
+* CANDIDATE SOURCE (model knowledge, not currently verified). Named from what you know (CPS, HRS, SIPP, PSID, ACS, Compustat, Orbis, LEHD, administrative registers, ...), with the caveat printed beside it: "Suggested from model knowledge; current availability, variables, years and access requirements were not verified."
+* VERIFIED SOURCE (live documentation checked). Only when web access was authorised for this run: you opened the current documentation and state the years covered, the variables, the unit of observation, public or restricted access, price or application requirements, the merge key to the existing data, restrictions, and the URL.
+
+Never report a candidate as verified. A source that does not exist today, or that no longer carries the variable, is a wasted month for the author.
+
+Prefer a source that extends or validates the existing dataset over one that would replace it -- unless the existing data cannot measure the object at all, in which case replacement is the honest proposal and you say so.
 
 SEVERITY DEFINITIONS
 
@@ -886,6 +1050,11 @@ Choose one:
 
 A. CONTINUE WITH CURRENT DESIGN
 The core design is credible; only targeted additions or narrower claims are needed.
+
+A2. CONTINUE WITH A STRENGTHENED DESIGN
+The question and data stand; the estimator, identifying variation or measurement named in a specific finding materially improves what the current design already delivers, without changing the question.
+
+THE VERDICT FOLLOWS THE BOTTLENECK, never the severity count. The absence of a FATAL finding does not make A or A2 the expected answer: a single MAJOR identification problem can make the stated question unanswerable with this design, and then the honest verdict is C, E or "the current design cannot identify the target", whichever the bottleneck is. Name the bottleneck finding in the explanation.
 
 B. CONTINUE AFTER RE-ESTIMATION
 The core question remains viable, but key results must be re-estimated or revalidated.

@@ -42,6 +42,36 @@ For each serious candidate:
 
 Use official journal/publisher pages for fees and author requirements whenever possible. Use Crossref/DOI metadata, official journal issue pages, working-paper repositories, or author pages to verify recent-paper metadata. Do not use crowdsourced fee tables as authoritative when official information exists.
 
+## 2b. Two tiers, and what each one may assert
+
+This audit runs in one of two modes and is told which. They differ in the
+evidence a recommendation is allowed to rest on, never in the honesty required.
+
+**Model knowledge (below the web-verification budget).** Work from what you
+know about the field. You may say that a journal is a strong intellectual home
+for this argument and why: scope, method, the kind of contribution it values,
+the audience it reaches. You may not state what the journal charges, who edits
+it, what it requires of a submission, or how long review takes. Those are facts
+about the journal today, your knowledge of them is a memory of a web page, and
+a fee remembered from two years ago and printed as current is worse than no fee
+at all, because the reader cannot see that it is stale. Say plainly that
+nothing was checked.
+
+**Web verified (at or above it).** The web CONVALIDATES what you propose. It
+does not start again from nothing: you know the field, and spending the budget
+rediscovering that is waste. So:
+
+1. Propose ten to fifteen candidates from your own knowledge.
+2. Check each against the journal's own pages for three things memory cannot
+   know: that the scope still matches, that comparable work has appeared there
+   recently, and what it currently requires of a submission.
+3. Recommend the three to five that survive.
+
+A journal you could not confirm STAYS IN THE REPORT as a candidate, marked as
+not verified. It is not dropped, because it may be exactly the right home and
+the only thing missing is the check. It is never presented as a verified
+recommendation, because the difference is what was bought.
+
 ## 3. Candidate generation
 
 Generate a broad internal candidate set, then retain only journals with a defensible connection to the manuscript. Cover neighboring fields when the paper naturally bridges them.
@@ -143,7 +173,7 @@ These can be the same journal. Explain why.
 
 ## 9. Readiness interaction
 
-If the paper is **READY FOR SUBMISSION** or **READY AFTER MINOR CORRECTIONS**, provide an ordered submission sequence.
+If the paper is **READY FOR SUBMISSION** or **READY WITH MINOR REVISIONS**, provide an ordered submission sequence.
 
 If the paper is **NOT READY**, do not tell the author to submit immediately. Instead state:
 
@@ -200,3 +230,4 @@ List every fee, policy, or requirement that could not be verified.
 - Do not hide an awkward recent precedent that weakens a novelty claim.
 - Do not recommend a journal that does not accept the manuscript type.
 - Do not present a conditional target as an immediate recommendation when the paper is not ready.
+- Do not present an unconfirmed candidate as a verified recommendation. A journal you could not check is a lead, and saying so costs the reader nothing and saves them a wasted submission.
