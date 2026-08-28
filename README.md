@@ -35,10 +35,13 @@ compiled PDF report:
   check, whether or not you asked.
 - **A submission-readiness verdict, a findings ledger, and an implementation
   plan** for each finding, in a formatted report.
-- **Journal targeting** with real fees and requirements, and a **spend limit**
-  so an audit delivers a report within a budget you set.
-- **A private companion.** Your paper is sent only to the AI provider you
-  choose, under your own account, and is never held on a RIGOR server.
+- **A run limit you set.** Specialized audits from $5 and general audits from
+  $10 on your own Anthropic or OpenAI key, or a RIGOR-run audit with no API
+  key at all. The audit spends only what it uses, never the limit.
+- **A private companion.** Your paper goes only to the AI provider that runs
+  the audit -- under your own account when you bring a key, under RIGOR's
+  when you buy a RIGOR-run audit. The working copy lives on the server only
+  for the length of the run and is deleted when the audit ends.
 
 ## What is here
 
@@ -54,8 +57,8 @@ standard.
 difference in differences, regression discontinuity, instrumental variables,
 selection on observables, synthetic control, panel fixed effects, time series,
 structural models, partial identification, causal machine learning, game theory,
-mechanism design, dynamic macro, and matching and market design, each with a
-consistency and a literature variant.
+mechanism design, dynamic macro, and matching and market design, most with both
+a consistency and a literature variant.
 
 ## A note on where these come from
 
