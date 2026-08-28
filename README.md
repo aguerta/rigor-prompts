@@ -24,7 +24,7 @@ or the finished document.
 ## What the hosted version adds
 
 The prompts alone are one pass in a chat window. The hosted product at
-**rigor.onrender.com** runs the same checks as a full pipeline and returns a
+**rigor.qhawarina.pe** runs the same checks as a full pipeline and returns a
 compiled PDF report:
 
 - **Multiple rounds and self-verification.** It reads the paper several times,
