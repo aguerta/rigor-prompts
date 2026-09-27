@@ -1,0 +1,7 @@
+{
+  "name": "RIGOR — Academic Research Audit Engine",
+  "description": "Interactive prompt explorer, pipeline builder, and academic audit engine for social science and economics research papers.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
