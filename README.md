@@ -1,3 +1,5 @@
+# LINK LIVE APPLET GEMINI: https://ai.studio/apps/42bfb5a3-e21c-433d-bdc8-0cc7ad9e9463
+
 # RIGOR — Research Audit Prompts
 
 This is the open prompt library behind **RIGOR**, an AI research audit for the
